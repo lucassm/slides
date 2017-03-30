@@ -16,8 +16,10 @@ $endfor$
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
-<link href="https://fonts.googleapis.com/css?family=Alegreya|Indie+Flower" rel="stylesheet">
+<!-- <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Alegreya|Indie+Flower" rel="stylesheet"> -->
+<!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> -->
+<link href="https://fonts.googleapis.com/css?family=Fascinate+Inline|Harmattan|Source+Sans+Pro" rel="stylesheet">
 
 <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
 $if(theme)$
@@ -61,9 +63,13 @@ $endfor$
 <div class="slides">
 
 <section>
+<img width="300px" src="Figuras/brasao_ufc.svg">
+<br>
+<br>
 <h1>$title$</h1>
 $for(author)$<h3>$author$</h3>$endfor$
 <p>
+<br>
 <h4>$date$</h4>
 </p>
 </section>  
@@ -113,7 +119,9 @@ $body$
     { src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
     { src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
     { src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-    { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+    { src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+    { src: 'bower_components/reveal.js/plugin/math/math.js', async: true,
+      condition: function() { return !!document.body.classList; } }
     // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
   ]
   });
